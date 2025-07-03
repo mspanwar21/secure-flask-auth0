@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Secure Flask Auth0 App</title>
+</head>
+<body>
+
+  <h1>Secure Flask Auth0 App</h1>
+  <hr>
+
+  <div>
+    <!-- Show login/logout links -->
+    <!-- The links will show regardless; Flask controls access -->
+    <a href="/">Home</a> |
+    <a href="/login">Login</a> |
+    <a href="/profile">Profile</a> |
+    <a href="/logout">Logout</a>
+  </div>
+
+  <hr>
+
+  <!-- Content placeholder -->
+  {% block content %}{% endblock %}
+
+</body>
+</html>

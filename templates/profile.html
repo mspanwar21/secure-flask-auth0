@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Profile Page</h2>
+  <p>Hello, {{ user['name'] }}!</p>
+  <p>Your profile data:</p>
+  <pre>{{ user | tojson(indent=2) }}</pre>
+  <p><a href="/logout">Logout</a></p>
+{% endblock %}
